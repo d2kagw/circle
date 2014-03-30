@@ -2,7 +2,10 @@
 goalTemplate = (goal) ->
   "<small>goal</small>
    <h1>#{goal.name}</h1>
-   <p>#{goal.description}</p>"
+   <p>
+    #{goal.description}
+    (#{goal.aim})
+   </p>"
 
 # GOALS
 window.game = window.game || {}
@@ -16,13 +19,13 @@ window.game.goals = [
   },
   {
     name: "Federal election is coming up, time to get converting"
-    description: "Make everyone Left Wing to complete this goal"
+    description: "Make everyone see the world your way"
     aim: "Convert all players political status to 'Left'"
     template: goalTemplate
     affects: "politics"
   },
   {
-    name: "You're obsession with gadgets has reached epic levels"
+    name: "Your obsession with gadgets has reached epic levels"
     description: "Collect gadgets to complete the goal"
     aim: "+5 Gadgets"
     template: goalTemplate
@@ -36,7 +39,7 @@ window.game.goals = [
     affects: "culture"
   },
   {
-    name: "You've scored a hot date, time to class it up a bit"
+    name: "Date night is coming up, time to class it up a bit"
     description: "Deck yourself out in this seasons latest threads"
     aim: "+5 Fashion"
     template: goalTemplate

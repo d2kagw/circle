@@ -20,6 +20,42 @@ window.game.events = [
     global: true
   },
   {
+    name: "The TED talk video you just watched totally changed your mind on the world"
+    description: "Flip your political status card"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "The current Prime Minister is a total asshole"
+    description: "Flip your political status card"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "You've been flirting too much with the peeps at the club"
+    description: "Flip your Relationship card to single"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "It's not me, it's you"
+    description: "Flip your Relationship card to single"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "All those Yoga sessions actually payed off!"
+    description: "Flip your Relationship card to 'Hooked Up'"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "You went online dating in feat of your boss threats to hook you up with a friend"
+    description: "Flip your Relationship card to 'Hooked Up'"
+    template: eventTemplate
+    global: false
+  },
+  {
     name: "Your buddy is shouting drinks at a new bar"
     description: "Pick a random card off a player of your choice"
     template: eventTemplate
