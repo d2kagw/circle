@@ -1,0 +1,25 @@
+{
+  "name": "circle",
+  "version": "1.0.0",
+  "description": "This is a project set-up using Grunt to take case of some standard tasks such as: compiling AMD based modules using RequireJS, watching/compiling Sass into CSS, watching/linting JS code and some other things",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-sass": "~0.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:d2kagw/circle.git"
+  },
+  "keywords": [
+    "Grunt",
+    "JavaScript"
+  ],
+  "author": "Aaron Wallis"
+}
