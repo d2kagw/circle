@@ -12,11 +12,10 @@ window.game.builder = (source) ->
 
 $(document).ready () ->
   window.game.builder "characters"
-
   window.game.builder "goals"
-  goalVerification()
-
   window.game.builder "items"
-
   window.game.builder "events"
+  window.game.builder "states"
+
+  goalVerification()
 

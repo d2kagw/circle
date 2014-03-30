@@ -9,27 +9,38 @@ window.game = window.game || {}
 window.game.goals = [
   {
     name: "A heap of new coffee joints have opened. Drink all the coffees!"
-    description: "Collect 10 coffees to complete the goal"
+    description: "Collect coffees to complete the goal"
+    aim: "+5 Coffees"
     template: goalTemplate
-    affects: "sporty"
+    affects: "coffee"
   },
   {
     name: "Federal election is coming up, time to get converting"
-    description: "Max out your political points to complete the goal"
+    description: "Make everyone Left Wing to complete this goal"
+    aim: "Convert all players political status to 'Left'"
     template: goalTemplate
-    affects: "political"
+    affects: "politics"
   },
   {
     name: "You're obsession with gadgets has reached epic levels"
-    description: "Collect 5 gadgets to complete the goal"
+    description: "Collect gadgets to complete the goal"
+    aim: "+5 Gadgets"
     template: goalTemplate
-    affects: "political"
+    affects: "gadgets"
   },
   {
     name: "The culture in this city is off the hook"
-    description: "Go to 5 events to complete the goal"
+    description: "Go to cultural events to complete the goal"
+    aim: "+5 Culture"
     template: goalTemplate
-    affects: "political"
+    affects: "culture"
+  },
+  {
+    name: "You've scored a hot date, time to class it up a bit"
+    description: "Deck yourself out in this seasons latest threads"
+    aim: "+5 Fashion"
+    template: goalTemplate
+    affects: "fashion"
   }
 ]
 
