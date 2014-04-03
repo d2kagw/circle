@@ -1,14 +1,30 @@
 # TEMPLATE
 eventTemplate = (event) ->
-  html = ""
+  type = ""
   if event.global == true
-    html = "<small>global event</small>" 
+    type = "Global Event"
   else 
-    html = "<small>event</small>"
+    type = "Event"
 
-  "#{html}
-   <h1>#{event.name}</h1>
-   <p>#{event.description}</p>"
+  "<div class='heading'>
+    <h1>#{event.name}</h1>
+    <div class='icon'>
+      E
+    </div>
+  </div>
+  <div class='body'>
+    <h2>
+      #{type}
+    </h2>
+    <div class='description'>
+      <p>
+        #{event.description.split('. ').join('.</p><p>')}
+      </p>
+    </div>
+    <small>
+      #{window.game_version}
+    </small>
+  </div>"
 
 # events
 window.game = window.game || {}

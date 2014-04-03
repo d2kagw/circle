@@ -1,8 +1,29 @@
 # TEMPLATE
 itemTemplate = (item) ->
-  "<small>item</small>
-   <h1>#{item.name}</h1>
-   <p>#{item.description}</p>"
+  "<div class='heading'>
+    <h1>#{item.name}</h1>
+    <div class='icon'>
+      I
+    </div>
+  </div>
+  <div class='body'>
+    <div class='description'>
+      <p>
+        #{item.description.split('. ').join('.</p><p>')}
+      </p>
+    </div>
+    <h2>
+      Item Value
+    </h2>
+    <ul class='list-unstyled'>
+      <li>
+        +1 #{item.name}
+      </li>
+    </ul>
+    <small>
+      #{window.game_version}
+    </small>
+  </div>"
 
 # itemS
 window.game = window.game || {}

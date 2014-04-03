@@ -1,9 +1,34 @@
 # TEMPLATE
 stateTemplate = (state) ->
-  "<small>#{state.title}</small>
-   <h1>#{state.name}</h1>
-   <p>#{state.description}</p>
-   <p>#{state.effect}</p>"
+  # Attributes
+  sum = 0
+  effect = ""
+  _.each state.effect, (value, name) ->
+    sum = sum + value
+    effect = "#{effect}<li>#{window.positiveNumbers(value)} #{name}</li>"
+
+  "<div class='heading'>
+    <h1>#{state.name}</h1>
+    <div class='icon'>
+      S
+    </div>
+  </div>
+  <div class='body'>
+    <div class='description'>
+      <p>
+        #{state.description.split('. ').join('.</p><p>')}
+      </p>
+    </div>
+    <h2>
+      Item Effects
+    </h2>
+    <ul class='list-unstyled'>
+      #{effect}
+    </ul>
+    <small>
+      #{window.game_version}
+    </small>
+  </div>"
 
 # stateS
 window.game = window.game || {}
@@ -12,28 +37,40 @@ window.game.states = [
     title: "Relationship"
     name: "Single"
     description: "It's ok - I'm a better person when I can focus on my own energy... (Forever Alone...)"
-    effect: "+1 Culture, -1 Cash"
+    effect: {
+      culture: 1
+      cash: -1
+    }
     template: stateTemplate
   },
   {
     title: "Relationship"
     name: "Hooked Up"
     description: "Honeymoon period is over and I get sex less now than I did when I was single, but dem hugs :3"
-    effect: "+1 Foods, -1 Fun"
+    effect: {
+      foods: 1
+      fun: -1
+    }
     template: stateTemplate
   },
   {
     title: "Politics"
-    name: "Left"
+    name: "Left Wing"
     description: "I spend my weekends knitting jumpers for pengiuns in need and 'Like' all the protests I can on Facebook to help save the world"
-    effect: "+1 Fun, -1 Cash"
+    effect: {
+      fun: 1
+      cash: -1
+    }
     template: stateTemplate
   },
   {
     title: "Politics"
-    name: "Right"
+    name: "Right Wing"
     description: "If you're so desperate for jobs, why don't you move to the country and work in mining? They're always looking for staff."
-    effect: "+1 Coffees, -1 Fashion"
+    effect: {
+      coffees: 1
+      fashion: -1
+    }
     template: stateTemplate
   }
 ]

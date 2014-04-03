@@ -5,17 +5,32 @@ characterTemplate = (character) ->
   startWith = ""
   _.each character.startWith, (value, name) ->
     sum = sum + value
-    startWith = "#{startWith}<li>#{value} #{name}</li>"
+    startWith = "#{startWith}<li>#{window.positiveNumbers(value)} #{name}</li>"
   
   console.warn character.name, "has a total of", sum
 
-  "<small>Character</small>
-   <h1>#{character.name}</h1>
-   <p>#{character.description}</p>
-   <h4>Starts With</h4>
-   <ul class='list-unstyled'>
-    #{startWith}
-   </ul>"
+  "<div class='heading'>
+    <h1>#{character.name}</h1>
+    <div class='icon'>
+      C
+    </div>
+  </div>
+  <div class='body'>
+    <div class='description'>
+      <p>
+        #{character.description.split('. ').join('.</p><p>')}
+      </p>
+    </div>
+    <h2>
+      Starts With Items
+    </h2>
+    <ul class='list-unstyled'>
+      #{startWith}
+    </ul>
+    <small>
+      #{window.game_version}
+    </small>
+  </div>"
 
 # CHARACTERS
 window.game = window.game || {}
@@ -66,7 +81,7 @@ window.game.characters = [
     }
   },
   {
-    name: "Party Animal"
+    name: "Wild Party Animal"
     description: "Without a doubt this is the one person you want to show at your party. Walks around with an assortment of shot glasses and a flask of Sambucca, you can rest assured that any situation can turn into a bender."
     template: characterTemplate
     startWith: {

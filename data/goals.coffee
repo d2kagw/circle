@@ -1,46 +1,62 @@
 # TEMPLATE
 goalTemplate = (goal) ->
-  "<small>goal</small>
-   <h1>#{goal.name}</h1>
-   <p>
-    #{goal.description}
-    (#{goal.aim})
-   </p>"
+  "<div class='heading'>
+    <h1>#{goal.name}</h1>
+    <div class='icon'>
+      G
+    </div>
+  </div>
+  <div class='body'>
+    <h2>
+      Goal
+    </h2>
+    <div class='description'>
+      <p>
+        #{goal.description.split('. ').join('.</p><p>')}
+      </p>
+      <p>
+        #{goal.aim.split('. ').join('.</p><p>')}
+      </p>
+    </div>
+    <small>
+      #{window.game_version}
+    </small>
+  </div>"
 
 # GOALS
 window.game = window.game || {}
 window.game.goals = [
   {
     name: "A heap of new coffee joints have opened. Drink all the coffees!"
-    description: "Collect coffees to complete the goal"
+    description: "Collect coffees to complete the goal."
     aim: "+5 Coffees"
     template: goalTemplate
     affects: "coffee"
   },
   {
     name: "Federal election is coming up, time to get converting"
-    description: "Make everyone see the world your way"
+    description: "Make everyone see the world your way."
     aim: "Convert all players political status to 'Left'"
     template: goalTemplate
     affects: "politics"
   },
   {
     name: "Your obsession with gadgets has reached epic levels"
-    description: "Collect gadgets to complete the goal"
+    description: "Collect gadgets to complete the goal."
     aim: "+5 Gadgets"
     template: goalTemplate
     affects: "gadgets"
   },
   {
     name: "The culture in this city is off the hook"
-    description: "Go to cultural events to complete the goal"
+    description: "Go to cultural events to complete the goal."
     aim: "+5 Culture"
     template: goalTemplate
     affects: "culture"
   },
   {
     name: "Date night is coming up, time to class it up a bit"
-    description: "Deck yourself out in this seasons latest threads"
+    description: "Deck yourself out in this seasons latest threads."
     aim: "+5 Fashion"
     template: goalTemplate
     affects: "fashion"
