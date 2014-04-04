@@ -4,8 +4,9 @@ stateTemplate = (state) ->
   sum = 0
   effect = ""
   _.each state.effect, (value, name) ->
-    sum = sum + value
-    effect = "#{effect}<li>#{window.positiveNumbers(value)} #{name}</li>"
+    unless value == 0
+      sum = sum + value
+      effect = "#{effect}<li><span class='value'>#{window.positiveNumbers(value)}</span> #{window.uppercaseFirst(name)}</li>"
 
   "<div class='heading'>
     <h1>#{state.name}</h1>
@@ -38,8 +39,12 @@ window.game.states = [
     name: "Single"
     description: "It's ok - I'm a better person when I can focus on my own energy... (Forever Alone...)"
     effect: {
-      culture: 1
-      cash: -1
+      coffees:   1
+      gadgets:   0
+      politics: -1
+      foods:     1
+      culture:   0
+      fashion:  -1
     }
     template: stateTemplate
   },
@@ -48,8 +53,12 @@ window.game.states = [
     name: "Hooked Up"
     description: "Honeymoon period is over and I get sex less now than I did when I was single, but dem hugs :3"
     effect: {
-      foods: 1
-      fun: -1
+      coffees:  -1
+      gadgets:   0
+      politics:  1
+      foods:    -1
+      culture:   0
+      fashion:   1
     }
     template: stateTemplate
   },
@@ -58,8 +67,12 @@ window.game.states = [
     name: "Left Wing"
     description: "I spend my weekends knitting jumpers for pengiuns in need and 'Like' all the protests I can on Facebook to help save the world"
     effect: {
-      fun: 1
-      cash: -1
+      coffees:   0
+      gadgets:  -1
+      politics:  0
+      foods:    -1
+      culture:   1
+      fashion:   1
     }
     template: stateTemplate
   },
@@ -68,8 +81,12 @@ window.game.states = [
     name: "Right Wing"
     description: "If you're so desperate for jobs, why don't you move to the country and work in mining? They're always looking for staff."
     effect: {
-      coffees: 1
-      fashion: -1
+      coffees:   0
+      gadgets:   1
+      politics:  0
+      foods:     1
+      culture:  -1
+      fashion:  -1
     }
     template: stateTemplate
   }

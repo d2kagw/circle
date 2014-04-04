@@ -36,7 +36,67 @@ window.game.events = [
     global: true
   },
   {
-    name: "The TED talk video you just watched totally changed your mind on the world"
+    name: "???"
+    description: "All girls miss one turn when played"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "It's pissing down and you're at a summer festival"
+    description: "Take everyone's item cards, shuffle and redistribute"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Coffee item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Culture item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Politics item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Food item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Fashion item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Everyone discard one played Gadgets item card"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "The TED video you watched totally changed your view on the world"
+    description: "Flip your political status card"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "Flip your political status card"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
     description: "Flip your political status card"
     template: eventTemplate
     global: false
@@ -48,7 +108,7 @@ window.game.events = [
     global: false
   },
   {
-    name: "You've been flirting too much with the peeps at the club"
+    name: "You've been flirting too much with the hotties at the gym"
     description: "Flip your Relationship card to single"
     template: eventTemplate
     global: false
@@ -78,13 +138,61 @@ window.game.events = [
     global: false
   },
   {
+    name: "????"
+    description: "Pick a random card off a player of your choice"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "Pick a random card off a player of your choice"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "Pick a random card off a player of your choice"
+    template: eventTemplate
+    global: false
+  },
+  {
     name: "You scratched your besties new fixie"
     description: "A player grabs a random card from your hand"
     template: eventTemplate
     global: false
   },
   {
+    name: "????"
+    description: "A player grabs a random card from your hand"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "A player grabs a random card from your hand"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "A player grabs a random card from your hand"
+    template: eventTemplate
+    global: false
+  },
+  {
     name: "Spring Fashion has just hit the shops, time to refresh the wardrobe"
+    description: "Discard one Goal card and grab a new one off the deck"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "Discard one Goal card and grab a new one off the deck"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
     description: "Discard one Goal card and grab a new one off the deck"
     template: eventTemplate
     global: false
@@ -102,45 +210,147 @@ window.game.events = [
     global: false
   },
   {
+    name: "????"
+    description: "You miss a turn"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "You miss a turn"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "You miss a turn"
+    template: eventTemplate
+    global: false
+  },
+  {
     name: "You're all hungover as shit"
     description: "Everyone can only draw one until this card is covered"
     template: eventTemplate
     global: true
   },
   {
-    name: "Turns out the local Vego bar has been using shrimp paste in their laksa"
-    description: "All food super powers are lost. Put them in the discard pile"
+    name: "????"
+    description: "Everyone can only draw one until this card is covered"
     template: eventTemplate
     global: true
   },
   {
     name: "Humanitarian aid is needed to support the starving children"
-    description: "All players discard two items"
+    description: "All players discard two played items"
     template: eventTemplate
     global: true
   },
   {
-    name: "Your fave band is coming out and isn't doing any side shows"
-    description: "Discard two items"
+    name: "????"
+    description: "All players discard two played items"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "Discard a played item"
     template: eventTemplate
     global: false
   },
   {
-    name: "Humidity has gone too far this time and all our sacred coffee is spoiled"
-    description: "No coffee item cards can be played until this card is covered"
+    name: "????"
+    description: "Discard a played item"
     template: eventTemplate
-    global: true
+    global: false
   },
   {
-    name: "Hung parliament is hung"
-    description: "No politics item cards can be played until this card is covered"
+    name: "????"
+    description: "Discard a played item"
     template: eventTemplate
-    global: true
+    global: false
+  },
+  {
+    name: "????"
+    description: "Discard a played item"
+    template: eventTemplate
+    global: false
   },
   {
     name: "Dive into your laundry basket to find your lost keys"
     description: "Look at the last 5 cards in the discard deck, take one that you want"
     template: eventTemplate
     global: false
-  }
+  },
+  {
+    name: "Your fave band is coming out and isn't doing any side shows"
+    description: "No Culture item cards can be played until this card is covered"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "Humidity has gone too far this time and all our sacred coffee is spoiled"
+    description: "No Coffee item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "Turns out the local Vego bar has been using shrimp paste in their laksa"
+    description: "No Food items can be played while this card is shown"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "Hung parliament is hung"
+    description: "No Politics item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "You've stacked on a few and can't fit into any of your threads"
+    description: "No Fashion item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "Hot new gadget is delayed"
+    description: "No Gadget item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "No Culture item cards can be played until this card is covered"
+    template: eventTemplate
+    global: false
+  },
+  {
+    name: "????"
+    description: "No Coffee item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "No Food items can be played while this card is shown"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "No Politics item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "No Fashion item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
+  {
+    name: "????"
+    description: "No Gadget item cards can be played until this card is covered"
+    template: eventTemplate
+    global: true
+  },
 ]
