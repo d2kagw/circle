@@ -147,14 +147,14 @@ window.game.goals = [
   },{
     name: "Federal election is coming up, time to get converting"
     description: "Make everyone see the world your way."
-    aim: "Convert all players political status to 'Left'"
+    aim: "+5 Politics"
     template: goalTemplate
     affects: "politics"
   },
   {
     name: "Federal election is coming up, time to get converting"
     description: "Make everyone see the world your way."
-    aim: "Convert all players political status to 'Right'"
+    aim: "+5 Politics"
     template: goalTemplate
     affects: "politics"
   }

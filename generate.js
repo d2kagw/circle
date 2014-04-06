@@ -12,7 +12,7 @@ var cardSize = {
   height: 400
 };
 var scale = 4;
-var cards = 246;
+var cards = 244;
 
 // EXPORT --------------------------------------------
 

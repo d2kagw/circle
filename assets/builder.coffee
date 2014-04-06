@@ -1,5 +1,6 @@
-window.game_version = "v0.1"
+window.game_version = "v0.2"
 window.max_players  = 6
+window.limit        = 244
 
 window.positiveNumbers = (num) ->
   if num > 0
@@ -43,7 +44,6 @@ $(document).ready () ->
   count.character = window.game.builder "characters"
   count.goals     = window.game.builder "goals"
   count.events    = window.game.builder "events"
-  count.states    = window.game.builder "states"
   count.items     = window.game.itemBuilder()
 
   gameVerification();
@@ -173,10 +173,11 @@ gameVerification = () ->
   total = total + items_total
   total = total + window.game.goals.length
   total = total + window.game.events.length
-  total = total + (window.game.states.length / 2)
-
-  console.info "Total card count:", total
 
   percent = Math.round((window.game.events.length / (window.game.events.length + items_total)) * 100)
   console.info "Events", window.game.events.length, "- Items", items_total, "#{percent}% are events"
 
+  over = total - window.limit 
+  console.error "You have too many cards! You're", over, "over the limit !!!!" if over > 0
+  console.error "You can add a few cards! You're", Math.abs(over), "under the limit !!!!" if over < 0
+  console.info "Total card count:", total

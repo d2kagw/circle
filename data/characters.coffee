@@ -99,15 +99,15 @@ window.game.characters = [
     }
   },
   {
-    name: "The Ex"
-    description: "Broke up with your bestie a few years back, but for some reason still keeps coming around and inviting themselves to your parties. Why oh why won't they get the point?"
+    name: "Performer"
+    description: "Is always trying to get you to come to their latest show. ????"
     template: characterTemplate
     startWith: {
-      coffees: 2
-      gadgets: 2
-      politics: -2
-      foods: 0
-      culture: 0
+      coffees: 0
+      gadgets: -2
+      politics: 2
+      foods: -1
+      culture: 3
       fashion: -2
     }
   },
