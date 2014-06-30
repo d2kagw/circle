@@ -196,7 +196,7 @@ window.game.items = {
     "Click 'Like' on friends political rant on social media",
     "Retweet a friends rant on social media",
     "Instead of donating for the kids in Africa, Click 'Like' on the campaign",
-    "Get frustrated by your friends argument on Curch & State integration",
+    "Get frustrated by your friends argument on Church & State influence",
     "Complain to nobody about the government keeping too much of your data",
     "Complain about taxes, yet do nothing",
     "Complain about healthcare services, yet do nothing",

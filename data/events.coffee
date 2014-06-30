@@ -117,37 +117,37 @@ window.game.events = [
   },
   {
     name: "Your buddy is shouting drinks at a new bar"
-    description: "Take a played Item card your choice from of another character or discard one of yours"
+    description: "Take a played Item card your choice from of another character"
     template: eventTemplate
     global: false
   },
   {
     name: "You're broke. Scab some stuff off your mates."
-    description: "Take a played Item card of your choice from another character or discard one of yours"
+    description: "Take a played Item card of your choice from another character"
     template: eventTemplate
     global: false
   },
   {
     name: "You left your wallet at home, borrow some stuff"
-    description: "Take a played Item card of your choice from another character or discard one of yours"
+    description: "Take a played Item card of your choice from another character"
     template: eventTemplate
     global: false
   },
   {
     name: "Call in a favour from your mates"
-    description: "Take a played Item card of your choice from another character or discard one of yours"
+    description: "Take a played Item card of your choice from another character"
     template: eventTemplate
     global: false
   },
   {
     name: "It's your buddies turn to get the round"
-    description: "Take a played Item card of your choice from another character or discard one of yours"
+    description: "Take a played Item card of your choice from another character"
     template: eventTemplate
     global: false
   },
   {
     name: "Raid your friends fridge while house sitting"
-    description: "Take a played Item card of your choice from another character or discard one of yours"
+    description: "Take a played Item card of your choice from another character"
     template: eventTemplate
     global: false
   },
@@ -189,7 +189,7 @@ window.game.events = [
   },
   {
     name: "Spring Fashion has just hit the shops, time to refresh the wardrobe"
-    description: "Discard one Goal card and grab a new one off the deck"
+    description: "Discard and replace one of yours, or another players Goal cards"
     template: eventTemplate
     global: false
   },
@@ -285,7 +285,7 @@ window.game.events = [
   },
   {
     name: "Turns out the local Vego bar has been using shrimp paste in their laksa"
-    description: "No Food items can be played while this card is shown"
+    description: "No Food item cards can be played until this card is covered"
     template: eventTemplate
     global: true
   },
@@ -321,7 +321,7 @@ window.game.events = [
   },
   {
     name: "It's your housemates time to cook dinner and it smells like shit"
-    description: "No Food items can be played while this card is shown"
+    description: "No Food item cards can be played until this card is covered"
     template: eventTemplate
     global: true
   },
